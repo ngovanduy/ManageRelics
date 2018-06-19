@@ -1,18 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-		 pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Lumino - Login</title>
-	<link href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath}/assets/css/datepicker3.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath}/assets/css/styles.css" rel="stylesheet">
-	<!--[if lt IE 9]>
-	<script src="${pageContext.request.contextPath}/assets/js/html5shiv.js"></script>
-	<script src="${pageContext.request.contextPath}/assets/js/respond.min.js"></script>
-	<![endif]-->
+	<jsp:include page="layout/css_common.jsp"/>
 </head>
 <body>
 	<div class="row">
