@@ -9,8 +9,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Scope("request")
 public class IndexController {
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/admin/index", method = RequestMethod.GET)
     public String index() {
-        return "index";
+        return "admin/index";
+    }
+
+    @RequestMapping(value = "/admin/404", method = RequestMethod.GET)
+    public String error404() {
+        return "error/error_404";
     }
 }
