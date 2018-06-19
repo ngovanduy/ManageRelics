@@ -1,22 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-		 pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Lumino - Panels</title>
-	<link href="${pageContext.request.contextPath}/assets/css/bootstrap.min.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath}/assets/css/font-awesome.min.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath}/assets/css/datepicker3.css" rel="stylesheet">
-	<link href="${pageContext.request.contextPath}/assets/css/styles.css" rel="stylesheet">
-	
-	<!--Custom Font-->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-	<!--[if lt IE 9]>
-	<script src="${pageContext.request.contextPath}/assets/js/html5shiv.js"></script>
-	<script src="${pageContext.request.contextPath}/assets/js/respond.min.js"></script>
-	<![endif]-->
+	<jsp:include page="layout/css_common.jsp"/>
 </head>
 <body>
 	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -376,15 +366,8 @@
 			</div>
 		</div><!--/.row-->
 	</div><!--/.main-->
-	
-	<script src="${pageContext.request.contextPath}/assets/js/jquery-1.11.1.min.js"></script>
-	<script src="${pageContext.request.contextPath}/assets/js/bootstrap.min.js"></script>
-	<script src="${pageContext.request.contextPath}/assets/js/chart.min.js"></script>
-	<script src="${pageContext.request.contextPath}/assets/js/chart-data.js"></script>
-	<script src="${pageContext.request.contextPath}/assets/js/easypiechart.js"></script>
-	<script src="${pageContext.request.contextPath}/assets/js/easypiechart-data.js"></script>
-	<script src="${pageContext.request.contextPath}/assets/js/bootstrap-datepicker.js"></script>
-	<script src="${pageContext.request.contextPath}/assets/js/custom.js"></script>
+
+	<jsp:include page="layout/js_common.jsp"/>
 	
 </body>
 </html>
