@@ -18,4 +18,9 @@ public class IndexController {
     public String error404() {
         return "error/error_404";
     }
+
+    @RequestMapping(value = "/admin/list", method = RequestMethod.GET)
+    public String list() {
+        return "/admin/list";
+    }
 }
